@@ -1,3 +1,5 @@
+# RUNNINGGOALS CONTROLLER
+# This controller manages the creation of new running goal records for users.
 class RunninggoalsController < ApplicationController
   def new
     @runninggoal = Runninggoal.new
