@@ -1,3 +1,5 @@
+# STEPS CONTROLLER
+# This controller manages the creation of new step records for users.
 class StepsController < ApplicationController
   def new
     @step = Step.new
