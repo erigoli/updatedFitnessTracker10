@@ -1,4 +1,5 @@
 # APPLICATION CONTROLLER
+# This controller provides methods to manage the current user's session.
 class ApplicationController < ActionController::Base
   helper_method :current_user, :logged_in?
 
