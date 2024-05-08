@@ -1,3 +1,5 @@
+# SLEEPINGGOALS CONTROLLER
+# This controller manages the creation of new sleeping goal records for users.
 class SleepinggoalsController < ApplicationController
   def new
     @sleepinggoal = Sleepinggoal.new
