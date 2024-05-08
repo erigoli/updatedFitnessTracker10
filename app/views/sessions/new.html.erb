@@ -1,13 +1,23 @@
+<!-- This heading indicates the section for the login form -->
 <h1>Login</h1>
 
+<!-- This form_with helper generates a form for logging in -->
 <%= form_with(url: login_path, method: :post) do |form| %>
+
+  <!-- This label prompts the user to enter their username -->
   <%= form.label :username %>
+  <!-- This text_field generates an input field for entering the username -->
   <%= form.text_field :username %><br>
 
+  <!-- This label prompts the user to enter their password -->
   <%= form.label :password %>
+  <!-- This password_field generates an input field for entering the password -->
   <%= form.password_field :password %><br>
 
+  <!-- This submit button allows the user to submit the login form -->
   <%= form.submit "Log In" %>
+
 <% end %>
 
+<!-- This link_to helper generates a link to the sign-up page -->
 <%= link_to "Sign Up", new_user_path %>
