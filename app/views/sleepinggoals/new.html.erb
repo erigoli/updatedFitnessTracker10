@@ -1,6 +1,16 @@
+<!-- This heading indicates the section for adding a sleeping hours goal -->
 <h1>Add Sleeping Hours GOAL</h1>
+
+<!-- This form_with helper generates a form for adding a sleeping hours goal -->
 <%= form_with(model: @sleepinggoal, url: sleepinggoals_path, local: true) do |form| %>
+
+  <!-- This label prompts the user to enter their sleeping hours goal -->
   <%= form.label :value, "Enter Your Sleeping Hours GOAL:" %>
+
+  <!-- This number_field generates an input field for entering the sleeping hours goal -->
   <%= form.number_field :value %>
+
+  <!-- This submit button allows the user to submit their sleeping hours goal -->
   <%= form.submit "Submit Hours" %>
+
 <% end %>
