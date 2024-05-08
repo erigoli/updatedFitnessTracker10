@@ -1,4 +1,5 @@
 # CALORIES CONTROLLER
+# This controller manages the creation of new calorie records for users.
 class CaloriesController < ApplicationController
   def new
     @calorie = Calorie.new
