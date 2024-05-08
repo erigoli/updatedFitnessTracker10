@@ -1,3 +1,5 @@
+# WEIGHTLOSSES CONTROLLER
+# This controller manages the creation of new weight loss records for users.
 class WeightlossesController < ApplicationController
   def new
     @weightloss = Weightloss.new
