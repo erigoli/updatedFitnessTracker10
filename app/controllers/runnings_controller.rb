@@ -1,3 +1,5 @@
+# RUNNINGS CONTROLLER
+# This controller manages the creation of new running records for users.
 class RunningsController < ApplicationController
   def new
     @running = Running.new
