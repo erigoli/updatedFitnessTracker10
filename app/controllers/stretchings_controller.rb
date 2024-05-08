@@ -1,3 +1,5 @@
+# STRETCHINGS CONTROLLER
+# This controller manages the creation of new stretching records for users.
 class StretchingsController < ApplicationController
   def new
     @stretching = Stretching.new
