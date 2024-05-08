@@ -1,4 +1,5 @@
-# app/controllers/sessions_controller.rb
+# SESSIONS CONTROLLER
+# This controller manages user sessions, allowing users to log in and out.
 class SessionsController < ApplicationController
   def create
     @user = User.find_by(username: params[:username])
