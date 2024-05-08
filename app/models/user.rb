@@ -1,3 +1,4 @@
+# USER MODEL with associations and methods
 class User < ApplicationRecord
   has_secure_password
   has_many :weightlossgoals
