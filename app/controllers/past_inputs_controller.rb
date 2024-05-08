@@ -1,3 +1,5 @@
+# PAST INPUTS CONTROLLER
+# This controller manages the retrieval of past input records for various categories.
 class PastInputsController < ApplicationController
   def index
     @steps = Step.all
