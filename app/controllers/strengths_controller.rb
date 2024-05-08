@@ -1,3 +1,5 @@
+# STRENGTHS CONTROLLER
+# This controller manages the creation of new strength records for users.
 class StrengthsController < ApplicationController
   def new
     @strength = Strength.new
