@@ -1,6 +1,16 @@
+<!-- This heading indicates the section for adding stretching hours -->
 <h1>Add Stretching Hours</h1>
+
+<!-- This form_with helper generates a form for adding stretching hours -->
 <%= form_with(model: @stretching, url: stretchings_path, local: true) do |form| %>
+
+  <!-- This label prompts the user to enter their stretching hours -->
   <%= form.label :value, "Enter Stretching Hours:" %>
+
+  <!-- This number_field generates an input field for entering the stretching hours -->
   <%= form.number_field :value %>
+
+  <!-- This submit button allows the user to submit their stretching hours -->
   <%= form.submit "Add Stretching Hours" %>
+
 <% end %>
