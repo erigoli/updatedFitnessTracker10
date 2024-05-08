@@ -1,3 +1,5 @@
+# WEIGHTS CONTROLLER
+# This controller manages the creation of new weight records for users.
 class WeightsController < ApplicationController
   def new
     @weight = Weight.new
