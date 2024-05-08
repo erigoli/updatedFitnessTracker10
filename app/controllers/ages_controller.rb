@@ -1,11 +1,12 @@
 # AGES CONTROLLER
+# This controller manages the creation of new age records for users.
 class AgesController < ApplicationController
   def new
     @age = Age.new
   end
 
   def create
-    @user = current_user # Adjust based on your user session management
+    @user = current_user 
     @age = @user.ages.new(age_params)
   
     if @age.save
