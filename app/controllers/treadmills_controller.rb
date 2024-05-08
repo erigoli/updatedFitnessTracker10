@@ -1,3 +1,5 @@
+# TREADMILLS CONTROLLER
+# This controller manages the creation of new treadmill records for users.
 class TreadmillsController < ApplicationController
   def new
     @treadmill = Treadmill.new
