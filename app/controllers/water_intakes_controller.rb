@@ -1,3 +1,5 @@
+# WATER INTAKES CONTROLLER
+# This controller manages the creation of new water intake records for users.
 class WaterIntakesController < ApplicationController
   def new
     @water_intake = WaterIntake.new
