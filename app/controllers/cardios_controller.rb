@@ -1,3 +1,5 @@
+# CARDIOS CONTROLLER
+# This controller manages the creation of new cardio records for users.
 class CardiosController < ApplicationController
   def new
     @cardio = Cardio.new
