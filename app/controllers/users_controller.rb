@@ -1,3 +1,5 @@
+# USERS CONTROLLER
+# This controller manages user registration and viewing user profiles.
 class UsersController < ApplicationController
   def new
     @user = User.new
