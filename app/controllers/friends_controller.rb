@@ -1,3 +1,5 @@
+# FRIENDS CONTROLLER
+# This controller manages CRUD operations for friend records.
 class FriendsController < ApplicationController
   def index
     @friends = Friend.all
