@@ -1,3 +1,5 @@
+# SLEEPINGS CONTROLLER
+# This controller manages the creation of new sleeping records for users.
 class SleepingsController < ApplicationController
   def new
     @sleeping = Sleeping.new
