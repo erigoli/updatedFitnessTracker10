@@ -1,11 +1,22 @@
+<!-- This heading indicates the new users page -->
 <h1>New Users Page</h1>
 
+<!-- This form_for helper generates a form for creating a new user -->
 <%= form_for @user do |f| %>
+
+  <!-- This label prompts the user to enter their username -->
   <%= f.label :username %>
+  
+  <!-- This text_field generates an input field for entering the username -->
   <%= f.text_field :username %><br>
+
+  <!-- This label prompts the user to enter their password -->
   <%= f.label :password %>
+  
+  <!-- This password_field generates an input field for entering the password -->
   <%= f.password_field :password %><br>
-  <%= f.submit "Create Account"%>
+
+  <!-- This submit button allows the user to submit the form and create their account -->
+  <%= f.submit "Create Account" %>
+
 <% end %>
-
-
