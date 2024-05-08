@@ -1,6 +1,16 @@
+<!-- This heading indicates the section for adding treadmill hours -->
 <h1>Add Treadmill Hours</h1>
-<%= form_with(model: @treadmill, url: treadmills_path, local: true) do |form|%>
+
+<!-- This form_with helper generates a form for adding treadmill hours -->
+<%= form_with(model: @treadmill, url: treadmills_path, local: true) do |form| %>
+
+  <!-- This label prompts the user to enter their treadmill hours -->
   <%= form.label :value, "Enter Treadmill Hours:" %>
+
+  <!-- This number_field generates an input field for entering the treadmill hours -->
   <%= form.number_field :value %>
+
+  <!-- This submit button allows the user to submit their treadmill hours -->
   <%= form.submit "Add Treadmill Hours" %>
+
 <% end %>
