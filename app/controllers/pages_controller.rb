@@ -1,3 +1,5 @@
+# PAGES CONTROLLER
+# This controller manages the index page and ensures that users are logged in before accessing it.
 class PagesController < ApplicationController
   before_action :require_login
 
