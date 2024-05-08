@@ -1,3 +1,5 @@
+# HEIGHTS CONTROLLER
+# This controller manages the creation of new height records for users.
 class HeightsController < ApplicationController
   def new
     @height = Height.new
