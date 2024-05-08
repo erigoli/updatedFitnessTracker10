@@ -1,3 +1,5 @@
+# WEIGHTLOSSGOALS CONTROLLER
+# This controller manages the creation of new weight loss goal records for users.
 class WeightlossgoalsController < ApplicationController
   def new
     @weightlossgoal = Weightlossgoal.new
