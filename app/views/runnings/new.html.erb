@@ -1,6 +1,16 @@
+<!-- This heading indicates the section for adding running miles -->
 <h1>Add Running Miles</h1>
+
+<!-- This form_with helper generates a form for adding running miles -->
 <%= form_with(model: @running, url: runnings_path, local: true) do |form| %>
+
+  <!-- This label prompts the user to enter their running miles -->
   <%= form.label :value, "Enter Your Miles:" %>
+
+  <!-- This number_field generates an input field for entering the running miles -->
   <%= form.number_field :value %>
+
+  <!-- This submit button allows the user to submit their running miles -->
   <%= form.submit "Submit Miles" %>
+
 <% end %>
