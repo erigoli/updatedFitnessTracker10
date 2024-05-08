@@ -1,6 +1,16 @@
+<!-- This heading indicates the purpose of the form -->
 <h1>Add Height</h1>
+
+<!-- This form_with helper generates a form for adding a user's height -->
 <%= form_with(model: @height, url: heights_path, local: true) do |form| %>
+
+  <!-- This label prompts the user to enter their height -->
   <%= form.label :value, "Enter Your Height:" %>
+
+  <!-- This number_field generates an input field for entering the height -->
   <%= form.number_field :value %>
+
+  <!-- This submit button allows the user to submit their height -->
   <%= form.submit "Submit Height" %>
+
 <% end %>
