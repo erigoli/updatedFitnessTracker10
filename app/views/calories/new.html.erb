@@ -1,6 +1,17 @@
+<!-- This heading indicates the purpose of the form -->
 <h1>Add Calorie Intake</h1>
+
+<!-- This form_with helper generates a form for adding a user's calorie intake -->
 <%= form_with(model: @calorie, url: calories_path, local: true) do |form| %>
+
+  <!-- This label prompts the user to enter their calorie intake -->
   <%= form.label :amount, "Enter Calories Consumed:" %>
+
+  <!-- This number_field generates an input field for entering the calorie intake -->
   <%= form.number_field :amount %>
+
+  <!-- This submit button allows the user to submit their calorie intake -->
   <%= form.submit "Add Calories" %>
+
 <% end %>
+
