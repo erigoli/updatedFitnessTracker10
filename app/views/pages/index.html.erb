@@ -137,7 +137,7 @@
               </div
               ></div
             ><span class="fitness-tracker-dashboard-text26 Heading_1"
-              ><span><%= @total_cardios_consumed + @total_stretchings_consumed + @total_treadmills_consumed + @total_strengths_consumed %></span></span
+              ><span><%= @total_cardios_consumed.to_i + @total_stretchings_consumed.to_i + @total_treadmills_consumed.to_i + @total_strengths_consumed.to_i %></span></span
             ><span class="fitness-tracker-dashboard-text28 Body_3"
               ><span>Hours</span></span
             ></div
@@ -169,7 +169,7 @@
             ><a href="/ages/new.html">
             <div class="fitness-tracker-dashboard-frame16"
               ><span class="fitness-tracker-dashboard-text42"
-                ><span><%= @total_ages_consumed %>years</span></span
+                ><span><%= @total_ages_consumed %>yrs</span></span
               ><span class="fitness-tracker-dashboard-text44"
                 ><span> age</span></span
             ></a>

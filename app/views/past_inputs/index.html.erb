@@ -4,95 +4,96 @@
 <!-- This section displays past step inputs -->
 <h2>Steps</h2>
 <% @steps.each do |step| %>
-  <p>Step: <%= step.id %>, Date: <%= step.created_at %>, Value: <%= step.value %> steps</p>
+  <p>Date: <%= step.created_at %>, Input: <%= step.value %> steps</p>
 <% end %>
 
 <!-- This section displays past water intake inputs -->
 <h2>Water Intakes</h2>
 <% @water_intakes.each do |water_intake| %>
-  <p>Water Intake: <%= water_intake.id %>, Date: <%= water_intake.updated_at %>, Amount: <%= water_intake.gallons %> cups</p>
+  <p>Date: <%= water_intake.updated_at %>, Input: <%= water_intake.gallons %> cups</p>
 <% end %>
 
 <!-- This section displays past calorie inputs -->
 <h2>Calories</h2>
 <% @calories.each do |calorie| %>
-  <p>Calories: <%= calorie.id %>, Date: <%= calorie.updated_at %>, Amount: <%= calorie.amount %> kcal</p>
+  <p>Date: <%= calorie.updated_at %>, Input: <%= calorie.amount %> kcal</p>
 <% end %>
 
 <!-- This section displays past cardio inputs -->
 <h2>Cardio</h2>
 <% @cardio.each do |cardio| %>
-  <p>Cardio: <%= cardio.id %>, Date: <%= cardio.updated_at %>, Duration: <%= cardio.value %> hours</p>
+  <p>Date: <%= cardio.updated_at %>, Input: <%= cardio.value %> hours</p>
 <% end %>
 
 <!-- This section displays past stretching inputs -->
 <h2>Stretchings</h2>
 <% @stretchings.each do |stretching| %>
-  <p>Stretching: <%= stretching.id %>, Date: <%= stretching.updated_at %>, Duration: <%= stretching.value %> hours</p>
+  <p>Date: <%= stretching.updated_at %>, Input: <%= stretching.value %> hours</p>
 <% end %>
 
 <!-- This section displays past treadmill inputs -->
 <h2>Treadmills</h2>
 <% @treadmills.each do |treadmill| %>
-  <p>Treadmill: <%= treadmill.id %>, Date: <%= treadmill.updated_at %>, Distance: <%= treadmill.value %> miles</p>
+  <p>Date: <%= treadmill.updated_at %>, Input: <%= treadmill.value %> miles</p>
 <% end %>
 
 <!-- This section displays past strength inputs -->
 <h2>Strengths</h2>
 <% @strengths.each do |strength| %>
-  <p>Strength: <%= strength.id %>, Date: <%= strength.updated_at %>, Weight: <%= strength.value %> hours</p>
+  <p>Date: <%= strength.updated_at %>, Input: <%= strength.value %> hours</p>
 <% end %>
 
 <!-- This section displays past weight inputs -->
 <h2>Weights</h2>
 <% @weights.each do |weight| %>
-  <p>Weight: <%= weight.id %>, Date: <%= weight.updated_at %>, Value: <%= weight.value %> lbs</p>
+  <p>Date: <%= weight.updated_at %>, Input: <%= weight.value %> lbs</p>
 <% end %>
 
 <!-- This section displays past height inputs -->
 <h2>Heights</h2>
 <% @heights.each do |height| %>
-  <p>Height: <%= height.id %>, Date: <%= height.updated_at %>, Value: <%= height.value %> inches</p>
+  <p>Date: <%= height.updated_at %>, Input: <%= height.value %> inches</p>
 <% end %>
 
 <!-- This section displays past age inputs -->
 <h2>Ages</h2>
 <% @ages.each do |age| %>
-  <p>Age: <%= age.id %>, Date: <%= age.updated_at %>, Value: <%= age.value %> years</p>
+  <p>Date: <%= age.updated_at %>, Input: <%= age.value %> years</p>
 <% end %>
 
 <!-- This section displays past running inputs -->
 <h2>Runnings</h2>
 <% @runnings.each do |running| %>
-  <p>Running: <%= running.id %>, Date: <%= running.updated_at %>, Distance: <%= running.value %> miles</p>
+  <p>Date: <%= running.updated_at %>, Input: <%= running.value %> miles</p>
 <% end %>
 
 <!-- This section displays past running goal inputs -->
 <h2>Running Goals</h2>
 <% @running_goals.each do |running_goal| %>
-  <p>Running Goal: <%= running_goal.id %>, Date: <%= running_goal.updated_at %>, Distance: <%= running_goal.value %> miles</p>
+  <p>Date: <%= running_goal.updated_at %>, Input: <%= running_goal.value %> miles</p>
 <% end %>
 
 <!-- This section displays past sleeping inputs -->
 <h2>Sleepings</h2>
 <% @sleepings.each do |sleeping| %>
-  <p>Sleeping: <%= sleeping.id %>, Date: <%= sleeping.updated_at %>, Duration: <%= sleeping.value %> hours</p>
+  <p>Date: <%= sleeping.updated_at %>, Input: <%= sleeping.value %> hours</p>
 <% end %>
 
 <!-- This section displays past sleeping goal inputs -->
 <h2>Sleeping Goals</h2>
 <% @sleeping_goals.each do |sleeping_goal| %>
-  <p>Sleeping Goal: <%= sleeping_goal.id %>, Date: <%= sleeping_goal.updated_at %>, Duration: <%= sleeping_goal.value %> hours</p>
+  <p>Date: <%= sleeping_goal.updated_at %>, Input: <%= sleeping_goal.value %> hours</p>
 <% end %>
 
 <!-- This section displays past weight loss inputs -->
 <h2>Weight Losses</h2>
 <% @weight_losses.each do |weight_loss| %>
-  <p>Weight Loss: <%= weight_loss.id %>, Date: <%= weight_loss.updated_at %>, Amount: <%= weight_loss.value %> lbs</p>
+  <p>Date: <%= weight_loss.updated_at %>, Input: <%= weight_loss.value %> lbs</p>
 <% end %>
 
 <!-- This section displays past weight loss goal inputs -->
 <h2>Weight Loss Goals</h2>
 <% @weight_loss_goals.each do |weight_loss_goal| %>
-  <p>Weight Loss Goal: <%= weight_loss_goal.id %>, Date: <%= weight_loss_goal.updated_at %>, Amount: <%= weight_loss_goal.value %> lbs</p>
+  <p>Date: <%= weight_loss_goal.updated_at %>, Input: <%= weight_loss_goal.value %> lbs</p>
 <% end %>
+
