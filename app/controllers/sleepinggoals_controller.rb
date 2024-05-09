@@ -7,7 +7,7 @@ class SleepinggoalsController < ApplicationController
 
   def create
     @user = current_user # Adjust based on your user session management
-    @sleepinggoal = @user.sleepinggoals.new(sleepinggoal_params)
+    @sleepinggoal = @user.sleepinggoals.new(sleepinggoal_params) || @user.sleepinggoals.create(amount: 0)
   
     if @sleepinggoal.save
       redirect_to new_sleepinggoal_path, notice: 'Sleeping Goal updated successfully.'
