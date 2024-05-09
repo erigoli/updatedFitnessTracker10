@@ -7,7 +7,7 @@ class CaloriesController < ApplicationController
 
   def create
     @user = current_user # Adjust based on your user session management
-    @calorie = @user.calories.new(calorie_params)
+    @calorie = @user.calories.new(calorie_params) || @user.calories.create(amount: 0)
   
     if @calorie.save
       redirect_to new_calorie_path, notice: 'Calories updated successfully.'
