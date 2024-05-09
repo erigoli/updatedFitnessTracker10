@@ -7,7 +7,7 @@ class TreadmillsController < ApplicationController
 
   def create
     @user = current_user
-    @treadmill = @user.treadmills.new(treadmill_params)
+    @treadmill = @user.treadmills.new(treadmill_params) || @user.treadmills.create(amount: 0)
   
     if @treadmill.save
       redirect_to new_treadmill_path, notice: 'Treadmill updated successfully.'
