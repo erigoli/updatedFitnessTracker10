@@ -7,7 +7,7 @@ class StrengthsController < ApplicationController
 
   def create
     @user = current_user
-    @strength = @user.strengths.new(strength_params)
+    @strength = @user.strengths.new(strength_params) || @user.strengths.create(amount: 0)
   
     if @strength.save
       redirect_to new_strength_path, notice: 'Strength updated successfully.'
