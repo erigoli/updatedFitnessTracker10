@@ -7,7 +7,7 @@ class HeightsController < ApplicationController
 
   def create
     @user = current_user # Adjust based on your user session management
-    @height = @user.heights.new(height_params)
+    @height = @user.heights.new(height_params) || @user.heights.create(amount: 0)
   
     if @height.save
       redirect_to new_height_path, notice: 'Height updated successfully.'
