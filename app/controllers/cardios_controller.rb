@@ -7,7 +7,7 @@ class CardiosController < ApplicationController
 
   def create
     @user = current_user # Adjust based on your user session management
-    @cardio = @user.cardios.new(cardio_params)
+    @cardio = @user.cardios.new(cardio_params) || @user.cardios.create(amount: 0)
   
     if @cardio.save
       redirect_to new_cardio_path, notice: 'Cardio updated successfully.'
