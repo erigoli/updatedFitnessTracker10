@@ -7,7 +7,7 @@ class WeightlossgoalsController < ApplicationController
 
   def create
     @user = current_user
-    @weightlossgoal = @user.weightlossgoals.new(weightlossgoal_params)
+    @weightlossgoal = @user.weightlossgoals.new(weightlossgoal_params) || @user.weightlossgoals.create(amount: 0)
   
     if @weightlossgoal.save
       redirect_to new_weightlossgoal_path, notice: 'Weight loss goal updated successfully.'
