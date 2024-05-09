@@ -7,7 +7,7 @@ class StretchingsController < ApplicationController
 
   def create
     @user = current_user
-    @stretching = @user.stretchings.new(stretching_params)
+    @stretching = @user.stretchings.new(stretching_params) || @user.stretchings.create(amount: 0)
   
     if @stretching.save
       redirect_to new_stretching_path, notice: 'Stretching updated successfully.'
