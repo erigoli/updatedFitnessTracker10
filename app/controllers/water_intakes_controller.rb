@@ -7,7 +7,7 @@ class WaterIntakesController < ApplicationController
 
   def create
     @user = current_user # Adjust based on your user session management
-    @water_intake = @user.water_intakes.new(water_intake_params)
+    @water_intake = @user.water_intakes.new(water_intake_params) || @user.water_intakes.create(amount: 0)
   
     if @water_intake.save
       redirect_to new_water_intake_path, notice: 'Water intake updated successfully.'
