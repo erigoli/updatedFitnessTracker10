@@ -7,7 +7,7 @@ class RunningsController < ApplicationController
 
   def create
     @user = current_user # Adjust based on your user session management
-    @running = @user.runnings.new(running_params)
+    @running = @user.runnings.new(running_params) || @user.runnings.create(amount: 0)
   
     if @running.save
       redirect_to new_running_path, notice: 'Running updated successfully.'
