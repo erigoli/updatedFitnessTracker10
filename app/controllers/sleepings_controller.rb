@@ -7,7 +7,7 @@ class SleepingsController < ApplicationController
 
   def create
     @user = current_user # Adjust based on your user session management
-    @sleeping = @user.sleepings.new(sleeping_params)
+    @sleeping = @user.sleepings.new(sleeping_params) || @user.sleepings.create(amount: 0)
   
     if @sleeping.save
       redirect_to new_sleeping_path, notice: 'Sleeping updated successfully.'
