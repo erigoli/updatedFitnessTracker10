@@ -7,7 +7,7 @@ class WeightsController < ApplicationController
 
   def create
     @user = current_user
-    @weight = @user.weights.new(weight_params)
+    @weight = @user.weights.new(weight_params) || @user.weights.create(amount: 0)
   
     if @weight.save
       redirect_to new_weight_path, notice: 'Weight updated successfully.'
