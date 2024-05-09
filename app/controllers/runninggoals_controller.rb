@@ -7,7 +7,7 @@ class RunninggoalsController < ApplicationController
 
   def create
     @user = current_user # Adjust based on your user session management
-    @runninggoal = @user.runninggoals.new(runninggoal_params)
+    @runninggoal = @user.runninggoals.new(runninggoal_params) || @user.runninggoals.create(amount: 0)
   
     if @runninggoal.save
       redirect_to new_runninggoal_path, notice: 'Running Goal updated successfully.'
