@@ -7,7 +7,7 @@ class AgesController < ApplicationController
 
   def create
     @user = current_user 
-    @age = @user.ages.new(age_params)
+    @age = @user.ages.new(age_params) || @user.ages.create(value: 0)
   
     if @age.save
       redirect_to new_age_path, notice: 'Age updated successfully.'
