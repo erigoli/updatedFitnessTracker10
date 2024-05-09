@@ -7,7 +7,7 @@ class StepsController < ApplicationController
 
   def create
     @user = current_user # Adjust based on your user session management
-    @step = @user.steps.new(step_params)
+    @step = @user.steps.new(step_params) || @user.steps.create(amount: 0)
   
     if @step.save
       redirect_to new_step_path, notice: 'Steps updated successfully.'
