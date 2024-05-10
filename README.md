@@ -1,11 +1,11 @@
 # README
 
-Introduction:
+# Introduction:
 
 Welcome to our Fitness Tracker App! This application is built using Ruby on Rails. It provides users with the ability to track their fitness activities, set goals, and monitor their progress over time. 
 
 
-Steps on how to view the project-
+# Steps on how to view the project:
 
 To view and run the project locally, follow these steps:
 
@@ -21,7 +21,7 @@ Dowload MySql package-
 sudo apt install libmariadb-dev
 bundle install
 
-Installation
+# Installation:
 
 Clone the repository to your local machine: git clone https://github.com/erigoli/updatedFitnessTracker10
 
@@ -33,11 +33,12 @@ Set up database- “rails db:create” “rails db:migrate”
 
 Have this running on the server- rails s -b 0.0.0.0
 
-Running the App
+# Running the App
 run the following command- “rails s -b 0.0.0.0 ”
+
 Now you access the app in your web browser at : http://54.227.230.8:3000
 
-Goals: 
+# Goals: 
 Our goal with this project is to provide users with an intuitive platform to track their fitness journey effectively. Key objectives include:
 Enable users to log their daily steps, calories, water intake.
 Allow users to keep track of their weight, height and personal information such as age
