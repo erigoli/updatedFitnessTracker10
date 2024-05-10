@@ -8,19 +8,29 @@ Welcome to our Fitness Tracker App! This application is built using Ruby on Rail
 Steps on how to view the project-
 
 To view and run the project locally, follow these steps:
+
 Before you begin, ensure you have the following installed on your system:
+
 Ruby (version 3.3.0)
+
 Ruby on Rails (version 7.1.3)
+
 Download rails-  use the $ gem install rails
+
 Dowload MySql package- 
 sudo apt install libmariadb-dev
 bundle install
 
 Installation
+
 Clone the repository to your local machine: git clone https://github.com/erigoli/updatedFitnessTracker10
-Navigate to the project directory:cd fitness-tracker
+
+Navigate to the project directory: cd fitness-tracker
+
 Install - “Bundle Install”
+
 Set up database- “rails db:create” “rails db:migrate”
+
 Have this running on the server- rails s -b 0.0.0.0
 
 Running the App
