@@ -57,18 +57,18 @@ Provides visualizations and insights to help users analyze their fitness data an
 
 # Functions:
 
-User Authentication
+User Authentication:
 Users can sign up for an account or log in using their existing credentials.
 Authentication is handled securely using basic authentification
 
-Fitness Tracking
+Fitness Tracking:
 Users can log their daily workouts, specifying the type of exercise, duration, and intensity.
 Workouts are categorized by activity type (e.g., cardio, strengthening ) for easy organization.
 
-Goal Setting
+Goal Setting:
 Users can set personal fitness goals, such as weight loss, sleep or cardio
 Goals can be customized based on duration and desired outcomes.
 
-Progress Monitoring
+Progress Monitoring:
 Users can view their progress over time through looking at previously logged input
 Metrics such as weight, body measurements, and workout frequency are logged and saved
