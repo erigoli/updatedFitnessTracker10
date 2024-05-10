@@ -5,7 +5,7 @@
 <%= form_with(model: @water_intake, url: water_intakes_path, local: true) do |form| %>
 
   <!-- This label prompts the user to enter their water intake in gallons -->
-  <%= form.label :gallons, "Enter Water Consumed (in gallons):" %>
+  <%= form.label :gallons, "Enter Water Consumed (in cups):" %>
 
   <!-- This number_field generates an input field for entering the water intake -->
   <%= form.number_field :gallons, step: 0.01 %>
